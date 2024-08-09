@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .bg-container {
+            text-align: center;
+            padding:10px;
+            background-color: black;
+            color: chartreuse;
+        }
+        label {
+            padding:10px;
+        }
+        input {
+            margin:5px;
+        }
+        #btn {
+            margin:10px;
+        }
+    </style>
+</head>
+<body>
+    <div class="bg-container">
+        <h1>Registration Form </h1>
+        <label for="name">Enter Your Name</label>
+        <input id="name" type="text"><br/>
+        <label for="password">Enter Your Password</label>
+        <input id="password" type="password">
+        <p>Gender</p>
+        <label for="male">Male</label>
+        <input id="male" type="radio" name="gender">
+        <label for="female">Female</label>
+        <input id="female" type="radio" name="gender"><br/>
+        <button id="btn" onclick="validateUser()">Submit</button>
+    </div>
+    <script>
+       let btnId=document.getElementById("btn");
+
+       let nameId=document.getElementById("name");
+       let passwordId=document.getElementById("password");
+       function validateUser() {
+        if(nameId.textContent===" ") {
+           alert("Please Enter your name");
+         }
+       } 
+      
+    
+     </script>
+</body>
+</html>
